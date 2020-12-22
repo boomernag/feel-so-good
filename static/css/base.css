@@ -48,6 +48,12 @@ body {
     color: white;
 }
 
+.btt-link
+.update-link,
+.remove-item{
+    cursor: pointer;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
