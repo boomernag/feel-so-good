@@ -1,6 +1,21 @@
-{% extends "base.html" %}
+{% extends "base.html"%}
 {% load static %}
+{% block extra_title %}- Home{% endblock %}
+{% block content%}
 
-{% block content %}
-	<h1 class="display-4 text-success">It works</h1>
+<!--Greeting-->
+{% include 'landing/includes/greeting.html' %}
+
+<!--Products section-->
+{% include 'landing/includes/products.html' %}
+
+<!--Quote section-->
+{% include 'landing/includes/quote.html' %}
+
+<!--Information-->
+{% include 'landing/includes/information.html' %}
+
+<!--Review section-->
+{% include 'landing/includes/reviews.html' %}
+
 {% endblock %}
