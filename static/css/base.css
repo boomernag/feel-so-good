@@ -3,15 +3,24 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
 }
 
-.greeting-container {
-    
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.greeting-image {
+    height: 100vh;
+    background: url('/media/home_header_1.png') no-repeat center top fixed;
+    background-size: cover;
 }
 
 /* from Bulma */
