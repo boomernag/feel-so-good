@@ -23,6 +23,56 @@ body {
     background-size: cover;
 }
 
+.quote-section {
+    min-height:30vh;
+    background-color: rgb(28, 37, 28);
+    background-size: cover;
+}
+
+/*Landing page - reviews section*/
+.footer {
+    background-color: #fafafa;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+.review-user-avatar {
+    vertical-align: middle;
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+#reviews-carousel {
+    display: flex;
+    background-size: cover;
+}
+
+.chevron-black {
+    color: black;
+}
+
+.chevron-black:hover {
+    color: #333333;
+}
+
+.carousel-item-review {
+    padding: 0 10%;
+}
+
+.review-image {
+    max-width: 5%;
+}
+
+.footer-link {
+    max-width: 5px;
+}
+
+.footer-logo {
+    max-width: 50px;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;

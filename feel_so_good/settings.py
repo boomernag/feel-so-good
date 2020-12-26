@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     # other
     'crispy_forms',
     'storages',
+    'about',
 ]
 
 MIDDLEWARE = [
@@ -107,13 +108,9 @@ SITE_ID = 1
 
 # Uses username OR email as authentication methods
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
-# Controls there is an email entered
 ACCOUNT_EMAIL_REQUIRED = True
-# Controls the email is valid
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-# Makes user insert email twice when registering certifying it is correct
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
-# Requires username is minimum 4 characters
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
