@@ -7,6 +7,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    margin-bottom:50px;
 }
 
 .vertical-center {
@@ -30,8 +31,18 @@ body {
 }
 
 /*Landing page - reviews section*/
-.footer {
+#footer {
+    position: relative;
+    height: 200px;
     background-color: #fafafa;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+.bottom-footer {
+    background-color: black;
 }
 
 .logo {
@@ -340,14 +351,14 @@ input[name='q']::placeholder {
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 164px;
+    .main-heading {
+        padding-top: 200px;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
+    .main-heading {
         padding-top: 116px;
     }
 
