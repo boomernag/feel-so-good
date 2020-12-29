@@ -93,14 +93,20 @@ These wireframes were designed with Balsamiq Mockups 4.0.21
 ## Faced and fixed issues
 
 Secret key can not be empty
+    Added a comma
 
 No module name contactcripsy_forms
+    Deleted contact app
 
 No media files showing after setting up AWS
 
 Stripe webhook sending successfull webhook at first then an email it didn't work
+    Not a requirement
 
 Sending emails when signing up and when making an order not working
+    Project thought it was is debug
+
+
 
 ### Tools used for testing
 
