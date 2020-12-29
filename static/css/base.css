@@ -76,6 +76,11 @@ body {
     max-width: 5%;
 }
 
+.reviews-seperator {
+    background-color: rgb(28, 37, 28);
+    height: 50px;
+}
+
 .footer-link {
     max-width: 5px;
 }
