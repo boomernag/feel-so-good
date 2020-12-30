@@ -185,6 +185,10 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.email-list {
+    color: black;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

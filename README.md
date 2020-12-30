@@ -44,24 +44,18 @@
 
 ### Project Goals
 #### Target Audience
-- People who love tea
-- People who want to get acquainted with tea culture
-- People who want to organise a party in Chineese or Japaneese style, search for tea ceremony service
-- People who want to get a new experience, curious about new things and want to get more knowledge about tea practice
-- People interested in Eastern culture in general
-- People who want to buy tea, teaware and care about good quality
-- People who are into meditation, yoga and similar practices   
+- People who wants to feel good
+- People who wants to buy products regarding feeling good
+- People who wants to be inspired to feeling good
 
 #### Visitor/user goals:
-- Purchase products/services shown on the website in a safe and secure way
-- Get information about tea ceremonies and different aspects of drinking tea
-- Organise custom tea events with special preferences
+- Purchase products shown on the website in a safe and secure way
+- Get inspiration about feeling good
 
 #### Business goals(site owner's goals):
-- Provide users with a secure professional e-commerce online shop
-- Make profit from selling teas, teaware and tea ceremony services
-- Promote tea culture in Ireland
-- Make the brand more recognisable and expand the business
+- Provide users with a secure professional e-commerce online shop.
+- Make profit from selling products.
+- Inspire people who are striving to feel good.
 ### User Stories    
 #### Common user stories (guests, new users and authenticated users)
 - As a user, I expect to access the website from any device, so that I can use the website anytime and anywhere.
@@ -73,7 +67,7 @@
 - As a user, I want to see the location of the Tea Club on a map, so that I can find the address easily and come to the advertised events. 
 - As a user, I want to be able to easily contact the owner/manager of the company, so that I can write an additional query or ask a question.
 - As a user, I want to learn more about different types of tea ceremonies, about tea culture in general, so that I can choose and book one of the tea ceremonies.
-- As a user, I want to view service details and product details (e.g. image, price, description), so that I can book/buy some of them.
+- As a user, I want to view product details (e.g. image, price, description), so that I can buy some of them.
 - As a user, I want to search and filter the products easily, so that I can quickly find a specific product I am looking for.
 - As a user, I want to view and modify my order in the cart before completing it, so that I can make last changes easily before proceeding to payment. 
 - As a user, I want to view a total price of my purchases and delivery cost, so that I will understand and see how much I will be charged.
@@ -87,39 +81,24 @@
 - As a user, I want to  be able to change my password, so that I can create the stronger password (e.g.in case I published my old password somewhere) to protect my personal details.    
 - As a user, I want to  be able to change my email or add the second email, so that I can have an easier access to the website's functionality and to gain more flexibility.
 #### Website Owner(admin)
-- As a user, I want to have convenient and secure admin interface avalable only for website admin, so that I can add, edit and remove products/services.
+- As a user, I want to have convenient and secure admin interface avalable only for website admin, so that I can add, edit and remove products.
 - As a user, I want to receive emails from the users when they fill out the contact form, so that I can reply on them satisfying users queries.
 ### Design
 #### Framework
 - [Bootstrap](https://www.bootstrapcdn.com/), front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
 - [JQuery](https://jquery.com/) is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation.
 #### Colour Scheme
-One of the main goals in UI was to focus user's attention on the products/services images. Therefore **calm** colors and **different shades** of one colour were mostly used accross the website's design.   
-**Green** and **black** are the colours associated with tea world, help us to immerse users to the **tea world**. While bright **salmon** colour is used for some headings and icons to create a contrast and catch user's attention.   
- Different shades of grey colour and shadows allow us to create clean and neat backgrounds and volume effect accross the website.   
- 
+**Green** and **Black** and **White** are the colors used throughout the site. **Green** is the nature color and we unconsiously feel good seeing it.
 ![Color Palette](wireframes/colour-palette.png)
 #### Typography
-There are three fonts used across the project that I find a good combination: 
-- [Open Sans](https://fonts.google.com/specimen/Open+Sans) used as the main body font, popular modern sans-serif typeface providing good readability.
-- [Marko One](https://fonts.google.com/specimen/Marko+One) - elegant, decorative and eye-catching font, used mostly for headings.  
-- [Sawarabi Mincho](https://fonts.google.com/specimen/Sawarabi+Mincho) - clean and simple font, perfectly fit to the "Art of Tea" and "East culture" theme, used for navbar elements and some headings.
+There is one font used across the project: 
+- [Lato](https://fonts.google.com/specimen/Lato) used as the main body font, popular modern sans-serif typeface providing good readability.
 #### Icons
-Icons are used widely, as they are good attention grabbers. They help users to find and scan content quickly and easily. Another advantage of using them is to help to break language barriers. They create more user-friendly experience for people with non-native English by giving the visual clue about the subject.   
+Icons are used widely, as they are good attention grabbers.
 - I used [FontAwesome](https://fontawesome.com/) as the main icon library across the project (e.g. for social media links, forms, cart, search and user icons in navigation).
-- Apart from that, I used some icons, specific to the tea world and East topic, that were found in a free icon library [Flaticon](https://www.flaticon.com/) - used in Landing and Events pages. 
 
 ### Wireframes
 [Balsamiq Wireframes](https://balsamiq.com/) tool was used to create all wireframes for the project.   
-
-Original wireframes for desktop, tablet and mobile can be found [here](https://github.com/irinatu17/Art-of-Tea/tree/master/wireframes).
-
-
-**Note:** The website was changed and evolved through the development process and several improvements were applied.
-The wireframes served as guidelines but some details such as positioning, placement of 
- images, buttons and other refinements diverge from the original wireframes.    
- Apart from that, there are some features that are included into original wireframes (such as reviews, social account login, user's avatar, image galleries for services/products), 
- but were considered of secondary importance and were not implemented yet due to time constraints. This is reflected and described in details in [Features left to implement](#features-left-to-implement) section, and I intend to come back to them and implement them in future when I can dedicate more time to it.
 
 
 <div align="right">
@@ -129,7 +108,7 @@ The wireframes served as guidelines but some details such as positioning, placem
 ---
 
 ## Features
-Art of Tea website is composed by eight applications: `landing`, `about`, `events`, `contact`, `products`(contains products and services), `cart`, `checkout`, `profiles`.
+Feel So Good website is composed by seven applications: `home`, `about`, `blog`, `products`, `bag`, `checkout`, `profiles`.
 ### Existing Features     
 #### Navbar
 The navbar is fixed at the top of the page all the time, this allows a user to easily navigate throughout the website.
@@ -147,7 +126,7 @@ The difference in navbar for logged in, non-logged in users and admin:
 For **non-logged in** users or guests navbar contains the following links: Login, Register.   
  - <img src="https://i.ibb.co/zXvBMvK/navbar-loggedin-users.png" alt="navbar_for_logged_in_users" target="_blank" rel="noopener" width="850">    
 For **logged in** users it contains the **"My Account"** nav-item which toggles down the following links that redirect user to the corresponding pages: My Profile, Order History, Logout.   
-- For **admin** apart from all the links available for logged-in users mentioned above, there is also a link to the **Product Management page**, where admin can add new products and services. This is avaliable only for superusers. Defensive design with corresponding error messages is in place to protect this page from manual entering the url in the browser.
+- For **admin** apart from all the links available for logged-in users mentioned above, there is also a link to the **Product Management page**, where admin can add new products. This is avaliable only for superusers. Defensive design with corresponding error messages is in place to protect this page from manual entering the url in the browser.
 #### Footer
  - <img src="https://i.ibb.co/ZHpsqZQ/footer.png" alt="footer" target="_blank" rel="noopener" width="850">    
  
@@ -162,35 +141,16 @@ The additional desktop only section contains
 #### Landing (home) page
  - <img src="/wireframes/landing_page_gif.gif" alt="landing_page" target="_blank" rel="noopener" width="850">
 The landing page serves to attract new users to the business, to give a clear understanding about that and to attract users to use the website's functionality (book ceremony/buy products). Smooth animation on scroll is apllied to almost all sections of the page(mostly to images and icons). Tha landing page consists of 9 sections:
-- **Hero image** section contains a full-screen image, main heading with a subheading and 2 buttons "Book tea ceremony" and "Buy tea or teaware" that redirect a user to the services and products pages, correspondingly. The purpose of this section is to attract new users, to make the first impression and to call to action.
-- **Introduction about** section  contains an introduction about the company, what it does and what can be found on the website. It also contains an image and a "Learn more" button which redirects a user to the About page.
-- **Quote**  section  contains heading and Osho's quote about process of drinking tea, that gives a user an impression and understanding of some principles and ideas of the "Art of Tea" tea-club.
-- **Our benefits** section provides a user information about the advantages of the company with a purpose of convincing users to use the functionality of the website. It contains 5 small paragraphs that describe benifits, along with authentic icons to enhance User Experience. 
-- **Tea Ceremony** section contains a paragraph about tea ceremonies offered to book on the website, along with a button "View our services" that leads to the Services page. There's also an image-carousel with 3 images representing tea ceremonies.
-- **Tea and Teaware** section also displays an image-carousel (3 images) and a paragraph about the online tea shop products, along with a button "View our products" that redirects to the Products page. 
-- **Events** section contains a paragraph about the events happening in the tea club with a link to the Events page.
-- **Reviews** sections contains the customers' reviews carousel with the user's avatars, review and usernames. Note: this section is static at the moment, but there's an intent to make it dynamic and to showcase real reviews, what's documented in [Features left to implement](#features-left-to-implement) section(reviews).
-- **Contact** section contains a question and a link to the Contact page, allowing a user to post a query/question there via the form.
+- **Hero image** section contains a full-screen image, main heading with a subheading and 1 button "See products" that redirect a user to the products pages. The purpose of this section is to attract new users, to make the first impression and to call to action.
+- **Quote**  section  contains heading and Virgil's quote about health.
+- **Products** section also displays an image-carousel (3 images) and a paragraph about the products, along with a button "View our products" that redirects to the Products page. 
+- **Reviews** sections contains the customers' reviews carousel with the user's avatars, review and usernames.
 
 #### About page
  - <img src="https://i.ibb.co/n8HThfT/about-mockup.png" alt="about_mockup" target="_blank" rel="noopener" width="850">
 The page provides a user information about the main focus of the website, its purposes, ideas and principles.    
 
-It contains 3 sections: **Who we are**, **Our principles** and **Our mission** followed by the images and an image-carousel in the last section.
-
-#### Events page
- - <img src="https://i.ibb.co/bLZ1Nc0/events-mockup.png" alt="events_mockup" target="_blank" rel="noopener" width="850">
-This page represents the events that happen each week in the tea club "Art of Tea". The short paragraph explains to a user how the events are organised and about the donation system.   
-
-As well as that, the page contains **Weekly events table** (from the Events model) displaying weekdays, time and name of the event that are available in the tea club.   
-There's also a **Find us here** section, showing the address, phone number and the link to the Facebook page, that can be checked to see more details about each week's events.
-On the large screen, there is also a small teapot image under the "Find us here" section. The animation on scroll is applied to that image and to the main paragraph.
-#### Contact page
- - <img src="https://i.ibb.co/dPbQ7VR/contact-mockup.png" alt="contact_mockup" target="_blank" rel="noopener" width="850">
-
-Contact page consists of 2 sections:
-- **Contact form** that's offered to fill out (name, email, message) if a user has any questions or queries. The real email will be sent to the admin of the website (handling by django `send_mail()` functionality). If an authenticated user opens the contact page, the full name (if provided in user's profile) and email fields are pre-populated.     
-- **Contact details** section provides company's address, phone number and email, along with a map showing the location of the tea club. By clicking at the red marker, a user can check the opening hours. Google Map API was used to accomplish that.
+It contains 1 sections: **Who we are**
 
 #### Products page
  - <img src="https://i.ibb.co/r2LkWxB/products-mockup.png" alt="products_mockup" target="_blank" rel="noopener" width="850">
@@ -209,33 +169,12 @@ Contact page consists of 2 sections:
 - **Breadcrumbs** on the top of the page give a user an additional opportunity to navigate through the product-related pages (e.g. to come back to the category selected).
 - **Products** button redirects user back to the All Products page.
 
-#### Services
- - <img src="https://i.ibb.co/XZFGW5H/services-mockup.png" alt="services_mockup" target="_blank" rel="noopener" width="850">
-- Services page displays horizontal services cards including the following information: name, description, price and image. No-image placeholder is assigned if no image is provided. 
-- Button "Learn more" redirects a user to the individual service page with detailed information. 
-- Similar to products, **Edit** and **Delete** are displayed on the cards if the user is **admin** with the corresponding functionality to render Edit Service page and toggle Delete modal.
-- At the bottom of the page there's a paragraph with a link to the **Contact page**, offering a user to contact a store manager for organising a custom tea ceremony and discussing further details.
-- As the website initial ideas and purposes did not suppose to contain many services (there are only 4 services displayed), there is no filtering or searching options that are in place for the products pages. 
-
-#### Service details page
- - <img src="https://i.ibb.co/SJHXLpB/service-details-mockup.png" alt="service_details_mockup" target="_blank" rel="noopener" width="850">
-- The service details page displays the following information: name, description, rating, price per person, itinerary, duration and image (or placeholder if no image was added). Clicking the image will open it in the new tab, if the image_url is assigned.
-- **Itinerary** example table contains the time and description within the stated duration. This section's purpose is to showcase a user how the ceremony is organised, what is included in it. 
-- For **admin** there is an **Itinerary form** functionality and **remove itinerary buttons** at the bottom of the page. This allows a superuser to quickly add/delete itinerary items.
-- Other features available only to the **admin** are the **Edit** and **Delete** (same as in the Services page) allowing admin to edit or delete services respectivelly.
-- To **add service to cart** a user has to fill the form that contains 2 fields: number of participants and date-time. 
-- **Number of participants** field (a quantity field in the back end) provides same functionality and validations as for quantity in product details page. The value range is withtin 1-100, the validation error messages will be fired when user tries to enter invalid input. 
-- The **datatime picker** allows a user to choose the desirable date and time. Only dates and times in future (after the current date/time) can be assigned. As well as that, the hours are restricted only to opening hours (12-8 p.m.) and minute stepping is set to 30 to enhance User Experience.
-- If the form is valid, clicking on **Add to Cart** button will update the cart with a new service added and success toast message will ensure a user that item was added to the cart.
-- **Breadcrumbs** on the top of the page give a user an additional opportunity to navigate through the service-related pages (e.g. to come back to the all services page).
-- **Services** button redirects a user back to the Services page.
-
 #### Cart page
  - <img src="https://i.ibb.co/VgrcD5d/cart-mockup.png" alt="cart" target="_blank" rel="noopener" width="850">    
 - The link at the top of the page **Continue shopping"** navigates  a user back to the products page, if a user wants to add something else to the cart.
 - Cart page is available for both logged in and non-logged in users, so that it is possible to make purchase being a guest.
-- The page contains a summary of the user's order: the item's **name**, **image**, **quantitie**/ **number of participants**, **price**, **sub-total** and **sku**(for products).
-- A user can **update** item's quantity/number of participants and date-time (if it's a service) and **remove** items from their order completely. To prevent from the accidental clicking the remove button, the modal will be opened on click asking a user to confirm the deletion. If a user tries to enter invalid quantity, error message will be displayed when "Update" button is clicked and will prevent the invalid form submission. The error message will inform about the possible range: 1-999 for product's quantity and 1-100 for service's number of participants fields.
+- The page contains a summary of the user's order: the item's **name**, **image**, **price**, **sub-total** and **sku**.
+- A user can **update** item's quantity and **remove** items from their order completely. If a user tries to enter invalid quantity, error message will be displayed when "Update" button is clicked and will prevent the invalid form submission. The error message will inform about the possible range: 1-99 for product's quantity fields.
 - **Toast messages** will be displayed when a user updates/removes items in the cart.
 - At the bottom of the page the **cart subtotal**, **delivery coast** and **grand total** are displayed.
 - There is a **Checkout button** that takes a user to the checkout page to proceed with the payment.
@@ -250,7 +189,6 @@ Checkout page contains 2 main section: checkout 3-steps form and order summary.
 - The **save info** checkbox allows the form information to be saved to the user's profile for the **logged in** users.
 - If it's a new or **non-logged** user there are links to register or login pages, in case a user wants to save the information to their profile.
 - Before proceeding the payment, user can review and check all the information in the table (**Form Summary**).
-- There's also an optional **Comment** field for cases if a user has any additional comments to the order.
 - A user is informed how much the card will be charged in the paragraph below the **Proceed to payment** button.
 - Since the website is made for educational purposes only and the Stripe functionality is only for testing, only **4242 4242 4242 4242** card number will lead to the successfull payment. A user is asked to provide card number, expiration date (any date in future) and CVC (any numbers). 
 - A webhook is used to make sure that the order is processed even in the cases when the payment process is interrupted (e.g. if a user accidentally closes the page or browser after clicking "Proceed to payment" button).
@@ -258,60 +196,46 @@ Checkout page contains 2 main section: checkout 3-steps form and order summary.
 
 #### Checkout Success page
 - The paragraph with a Thank you message is displayed on the top of the page to inform a user that the payment was processed and the email was sent to the user's email.
-- The 3 sections **Order info**, **Shipping details** and **Order Summary** contain all the information about the completed order. 
+- The **Order details** section contains all the information about the completed order. 
 - **Keep shopping** button redirects user to the Products page.
-- For logged-in users there's a button **View full order history** that takes users to the order history page.
 
 #### Profile page
 Profle feature is available only for **authenticated** users.
 - Profile page contains **Personal info** section (username and email displayed). Also it contains 2 buttons **Change password** and **Manage emails** (changing the current or adding a new email) that take a user to the corresponding pages (that's a part of Django allauth functionality with a customized templates).
 - **Shipping details** section allows to save the shipping information, so for the next purchase the fields in the checkout form will be pre-filled with this info. User can update this information anytime.
-- **View order history** link will redirect a user to the Order History page.
+- **Order history** section that displays Order History for account.
 
 #### Order History
 Order history feature is available only for **authenticated** users.
 - If a user has not made any purchases, the paragraph will inform that the order history is empty with a link to the Product page.
 - If there are completed orders, the table with the following fields: **Order Number**, **Date**, **Items**, **Total** is in place.
 - Clicking the link on the Order number will redirect a user to the **checkout success** page with all the order information. The Toast info message will tell the user that it's a past confirmation for the order number.
-- **View My Profile** link will redirect a user to the Profile page.
+- **Back To Profile** link will redirect a user to the Profile page.
 
 #### Admin product managment
-Product managment feature is available only for **authenticated superuser**.
-Admin page allows an owner of the website to add new products/services by filling out one of the two forms - **Add New Product** and **Add New Service** on the Product Management page. 
-If the form is valid, the product/service is added to the database and the user is redirected to the new created product/service details page.
-The defensive design is implemented to restrict other than admin users to manually enter the url to get access to the page. User will be redirected to the home page with the toast error messages appeared.
-**Edit** and **Delete** product/service functionality allow an admin to make the corresponding manipulations. The Delete functionality was updated during the development, so the product/service is not being completely removed from the database, but set as discontinued and is hidden from the user's view and can be set as active again any time.
+- Product managment feature is available only for **authenticated superuser**.
+- Admin page allows an owner of the website to add new products by filling out forms - **Add New Product** on the Product Management page. 
+- If the form is valid, the product is added to the database and the user is redirected to the new created product details page.
+- The defensive design is implemented to restrict other than admin users to manually enter the url to get access to the page. User will be redirected to the home page with the toast error messages appeared.
+- **Edit** and **Delete** product functionality allows an admin to make the corresponding manipulations.
 #### Django-allauth features
 ##### Sign Up
-The sign up page allows a user to create a new account. The user is asked to fill the fields "email", "username", "password" and "password (again)". When adding a username, the code compares it against existing email to ensure that it is unique. If user's input does not meet requirements, flash messages will inform a user about the error. When the form is submitted, a **verification email** is sent to the user's email to verify the email and finish registration process.   
-There is also a link to the login page for existing users at the bottom of the form.    
- The Registration page is only available to anonymous users and logged-in users are redirected out automatically.
+- The sign up page allows a user to create a new account. The user is asked to fill the fields "email", "username", "password" and "password (again)". When adding a username, the code compares it against existing email to ensure that it is unique. If user's input does not meet requirements, flash messages will inform a user about the error. When the form is submitted, a **verification email** is sent to the user's email to verify the email and finish registration process.   
+- There is also a link to the login page for existing users at the bottom of the form.    
+- The Registration page is only available to anonymous users and logged-in users are redirected out automatically.
 ##### Login
-The login page features the form with "username" and "password" fields, allowing registered users to log into their account. If the login was successfull, a user is redirected to the home page and the toast success message appears informing that the log in was successful. Otherwise, flash messages will be displayed about incorrect user's input.   
-There is also a link to the sign up page for new users at the bottom of the form.
-As well as that, there's a link to the **forgot password** functionality, using which a user can reset their password.
-The login page is only available to anonymous users and logged-in users are redirected out automatically.
+- The login page features the form with "username" and "password" fields, allowing registered users to log into their account. If the login was successfull, a user is redirected to the home page and the toast success message appears informing that the log in was successful. Otherwise, flash messages will be displayed about incorrect user's input.   
+- There is also a link to the sign up page for new users at the bottom of the form.
+- As well as that, there's a link to the **forgot password** functionality, using which a user can reset their password.
+- The login page is only available to anonymous users and logged-in users are redirected out automatically.
 ##### Forgot password
-A user can reset their password to be able to login by entering the email. Then the link for reseting password will be sent to the email provided. The user can create a new password and then login with a new password.
+- A user can reset their password to be able to login by entering the email. Then the link for reseting password will be sent to the email provided. The user can create a new password and then login with a new password.
 ##### Logout
-Hitting "logout" button renders logout page, asking to confirm if a user wants to logout. It will end their session and redirects to the homepage with a toast success message appeared.
+- Clicking "logout" button renders logout page, asking to confirm if a user wants to logout. It will end their session and redirects to the homepage with a toast success message appeared.
 #### 404 and 500 error pages
-Custom 404 and 500 pages contain heading, short information about the error and a button "Back Home". As well as that, they display navbar that allows users to come back easily to any page if they got lost.
+- Custom 404 and 500 pages contain heading, short information about the error and a button "Back Home". As well as that, they display navbar that allows users to come back easily to any page if they got lost.
 
 ### Features Left to Implement
-There are some features that I considered were of secondary importance and I have not implemented them yet due to time constraints, but intend to do so in future when I will be able to dedicate more time to them. Most of these features are displayed in my [original wireframes](https://github.com/irinatu17/Art-of-Tea/tree/master/wireframes).
-#### Star based  Rating and Reviews
-This will be the first priority feature I would like to implement in future. Users would be able to create, edit and delete their reviews for products and services. Rating would be displayd as stars(0-5) in the product details and service details pages. Also, in the landing page reviews section, the static reviews would be replaced with the real ones, displaying up to 5 random reviews from the database.
-#### User avatar
-This feature would allow users to assign the standard randomly picked avatar or upload their own photos/avatar. Avatar would be displayed on the user Profile page and also near the reviews, if a user have some.
-####  Social account login (Google and Facebook)
-This feature allows users to login using social networks accounts, Google and Facebook, that would enhance user experience and make the login process easier.
-#### Image galleries 
-As can be viewed in the original wireframes, I initially planned to assign up to 3 for products and 5 for service images. An attempt at this was made by creating **ImageGallery** Model in the Products app. However, this feature would require much more time to search for the suitable images, resize them and implement further functionality. So due to mentioned above time constraints the ImageGallery model was removed from the database, image and image_url fields were moved to the Product model. In the future, I would like to implement this feature and add more images to the products and services for enchancing User Experience.
-
-
-Other small features are also considered to be implemented in feature, such as **Back to Top button** or/and **Pagination** in products, **Scroll down button** on the landing page, **Sorting products** by price/name, **Discout system**.     
-I would also like to add **more products** to the store.
 
 <div align="right">
     <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -352,7 +276,6 @@ For deployment(production), a **PostgreSQL** database is provided by Heroku as a
  Image | image| ImageField | null=True, blank=True
  Image Url | image_url | URLField | max_length=1024, null=True, blank=True
  Sku | sku | CharField | max_length=254, null=True, blank=True
- Duration | duration | IntegerField | null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(24)]
  
 ##### Category
 | **Name** | **Database Key** | **Field Type** | **Validation** |
@@ -381,7 +304,6 @@ Order Total | order_total | DecimalField | max_digits=10, decimal_places=2, null
 Grand Total | grand_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
 Original Cart | original_cart | TextField | null=False, blank=False, default=''
 Stripe Pid | stripe_pid | CharField | max_length=254, null=False, blank=False, default=''
-Comment | comment | TextField | max_length=254, null=True, blank=True
 
 ##### Order LineItem Details 
 | **Name** | **Database Key** | **Field Type** | **Validation** |
@@ -429,6 +351,7 @@ Item Total | item_total | DecimalField | max_digits=6, decimal_places=2, null=Fa
 - [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) for compatibility with AWS.
 - [Travis](https://travis-ci.org/) - for integration testing.
 - [Balsamiq](https://balsamiq.com/) - to create wireframes.
+- [ImgBB](https://imgbb.com/) - to host images used in README.
 - [Coolors.co](https://coolors.co/) - to create colour palette used in the README.
 
 ### Databases
@@ -450,7 +373,7 @@ Testing information can be found in a separate [TESTING.md](https://github.com/b
 ---
 
 ## Deployment
-The Art of Tea project was developed using the [GitPod](https://www.gitpod.io/) online IDE and
+The Feel So Good project was developed using the [GitPod](https://www.gitpod.io/) online IDE and
 using Git & GitHub for version control. It is hosted on the [Heroku](https://heroku.com/) platform and user-uploaded images being hosted in [AWSS3Basket] (https://aws.amazon.com/)
 ### Local Deployment
 To be able to run this project, the following tools have to be installed:
@@ -474,7 +397,7 @@ Note: You can read more information about the cloning process on the [GitHub Hel
 
 2. Set up environment variables.     
 Note, that this process will be different depending on IDE you use.   
-In this it was done using the following way:      
+In this it was done using Heroku but it can also be done the following way:      
     - Create `.env` file in the root directory.
     - Add `.env` to the `.gitignore` file in your project's root directory
     - In `.env` file set environment variables with the following syntax:     
@@ -575,9 +498,10 @@ In order to send real emails from the application, you need to connect it to you
 
 ## Credits
 ### Code
-
+- The main code for the project is retraced through [Code Institute](https://codeinstitute.net/) video lessons on the last project in the course -Boutique Ado Django Mini-Project. It is customized to some parts, modified and enhanced to fit the project purposes.
+- [Stack Overflow](https://stackoverflow.com/) was helpful in countless number of times for giving answers to questions of how to proceed.
 ### Content and Media
-
+- The images are bought images since earlier from [Unsplash](https://unsplash.com).
 
 ### Acknowledgements
 
