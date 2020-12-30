@@ -1,5 +1,3 @@
-from .models import BlogModel, CommentModel
+from django.contrib import admin
 
-
-admin.site.register(BlogModel)
-admin.site.register(CommentModel)
+# Register your models here.

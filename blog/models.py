@@ -1,25 +1,19 @@
-from datetime import datetime
-
 from django.db import models
-from django.urls import reverse
-from django.utils.translation import ugettext_lazy as _
 
-from autoslug.fields import AutoSlugField
-from ckeditor.fields import RichTextField
 
-class BlogPost(models.Model):
-    title = models.CharField(_('title'), max_length=255)
-    slug = AutoSlugField(_('slug'), populate_from='title', unique=True)
-    image = models.ImageField(_('image'), blank=True, null=True, upload_to='blog')
-    text = RichTextField(_('text'))
-    description = models.TextField(_('description'), blank=True, null=True)
-    published = models.BooleanField(_('published'), default=False)
+class BlogModel(models.Model):
+    id = models.IntegerField(primary_key=True)
+    blog_title = models.CharField(max_length=20)
+    blog = models.TextField()
 
-    created = models.DateTimeField(_('created'), auto_now_add=True)
-    modified = models.DateTimeField(_('modified'), auto_now=True)
-    pub_date = models.DateTimeField(_('publish date'), blank=True, null=True)
+    def __str__(self):
+        return f"Blog: {self.blog_title}"
 
-    class Meta:
-        verbose_name = _('blog post')
-        verbose_name_plural = _('blog posts')
-        ordering = ['pub_date']
+
+class CommentModel(models.Model):
+    your_name = models.CharField(max_length=20)
+    comment_text = models.TextField()
+    blog = models.ForeignKey('BlogModel', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"Comment by Name: {self.your_name}"
