@@ -3,4 +3,5 @@ python:
     - "3.8.6"
 install: "pip install -r requirements.txt"
 script:
-  - pytest
+    - SECRET_KEY="a(ldjKeudh!" python manage.py test 
+
