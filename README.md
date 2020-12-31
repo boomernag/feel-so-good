@@ -61,18 +61,14 @@
 - As a user, I expect to access the website from any device, so that I can use the website anytime and anywhere.
 - As a user, I expect to easily navigate the website, so that I can quickly find what I'm looking for.
 - As a user, I want to easily access social media links of the company, so that I can read more information about it.
-- As a user, I want to read a summary info about the business, its ideas and benifits, so that I can quickly decide if it satisfies my needs.
+- As a user, I want to read an about section of the company, so that I can quickly decide if it satisfies my needs.
 - As a user, I want to find an information about the company, to know what they do, what their main principles and ideas
-- As a user, I want to view events that happen in the tea club this week in Dublin, so that I can come and join any event.
-- As a user, I want to see the location of the Tea Club on a map, so that I can find the address easily and come to the advertised events. 
-- As a user, I want to be able to easily contact the owner/manager of the company, so that I can write an additional query or ask a question.
-- As a user, I want to learn more about different types of tea ceremonies, about tea culture in general, so that I can choose and book one of the tea ceremonies.
 - As a user, I want to view product details (e.g. image, price, description), so that I can buy some of them.
 - As a user, I want to search and filter the products easily, so that I can quickly find a specific product I am looking for.
 - As a user, I want to view and modify my order in the cart before completing it, so that I can make last changes easily before proceeding to payment. 
 - As a user, I want to view a total price of my purchases and delivery cost, so that I will understand and see how much I will be charged.
 - As a user, I expect to make payments by card in a safe and secure way, so that I won't be concerned about the safety of my card details and won't be charged incorrectly.
-- As a user, I want to receive an email confirmation after checkout, so that I can make sure that payment was successfull.
+- As a user, I want to receive an email confirmation after checkout, so that I can make sure that payment was successful.
 #### New Users
 - As a user, I want to create my own account, so that I can save, view and edit my profile details and view my order history.
 #### Returning users
@@ -89,7 +85,6 @@
 - [JQuery](https://jquery.com/) is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation.
 #### Colour Scheme
 **Green** and **Black** and **White** are the colors used throughout the site. **Green** is the nature color and we unconsiously feel good seeing it.
-![Color Palette](wireframes/colour-palette.png)
 #### Typography
 There is one font used across the project: 
 - [Lato](https://fonts.google.com/specimen/Lato) used as the main body font, popular modern sans-serif typeface providing good readability.
@@ -122,24 +117,16 @@ in the cart to catch user's attention, and remains white (as other navbar elemen
 
 On the large screens an active page is highlighted (colour changes to green) depending on which page a user is currently on.      
 The difference in navbar for logged in, non-logged in users and admin:   
- - <img src="https://i.ibb.co/jhmctpR/navbar-for-guests.png" alt="navbar_for_guests" target="_blank" rel="noopener" width="850">    
 For **non-logged in** users or guests navbar contains the following links: Login, Register.   
- - <img src="https://i.ibb.co/zXvBMvK/navbar-loggedin-users.png" alt="navbar_for_logged_in_users" target="_blank" rel="noopener" width="850">    
 For **logged in** users it contains the **"My Account"** nav-item which toggles down the following links that redirect user to the corresponding pages: My Profile, Order History, Logout.   
 - For **admin** apart from all the links available for logged-in users mentioned above, there is also a link to the **Product Management page**, where admin can add new products. This is avaliable only for superusers. Defensive design with corresponding error messages is in place to protect this page from manual entering the url in the browser.
-#### Footer
- - <img src="https://i.ibb.co/ZHpsqZQ/footer.png" alt="footer" target="_blank" rel="noopener" width="850">    
- 
-Footer consists of 2 parts: main footer section and additional footer section which is displayed only on the large screens.   
-
-Main footer section is stuck to the bottom of the page and displayed across all the screens. It contains the **social media icon-links** which redirect a user to the corresponding page, opening in a new tab. GitHub and LinkedIn icons open author of the project's profile, while Instagram and Facebook icons open the main pages, as it is not the real company.   
-The additional desktop only section contains 
+#### Footer 
+Main footer section is stuck to the bottom of the page and displayed across all the screens. It contains the **social media icon-links** which redirect a user to the corresponding page, opening in a new tab. Icons open the main pages, as it is not the real company.   
 - **logo**, that is clickable and redirects to the landing page and also a small paragraph about the company
 - **quick links** to the main pages
 - **contact information** that contains address, phone number and email
 
 #### Landing (home) page
- - <img src="/wireframes/landing_page_gif.gif" alt="landing_page" target="_blank" rel="noopener" width="850">
 The landing page serves to attract new users to the business, to give a clear understanding about that and to attract users to use the website's functionality (book ceremony/buy products). Smooth animation on scroll is apllied to almost all sections of the page(mostly to images and icons). Tha landing page consists of 9 sections:
 - **Hero image** section contains a full-screen image, main heading with a subheading and 1 button "See products" that redirect a user to the products pages. The purpose of this section is to attract new users, to make the first impression and to call to action.
 - **Quote**  section  contains heading and Virgil's quote about health.
@@ -147,30 +134,22 @@ The landing page serves to attract new users to the business, to give a clear un
 - **Reviews** sections contains the customers' reviews carousel with the user's avatars, review and usernames.
 
 #### About page
- - <img src="https://i.ibb.co/n8HThfT/about-mockup.png" alt="about_mockup" target="_blank" rel="noopener" width="850">
-The page provides a user information about the main focus of the website, its purposes, ideas and principles.    
-
-It contains 1 sections: **Who we are**
+The page provides a user information about the main focus of the website.    
 
 #### Products page
- - <img src="https://i.ibb.co/r2LkWxB/products-mockup.png" alt="products_mockup" target="_blank" rel="noopener" width="850">
 - The "All products" page displays product cards, including the following information: category, name, price. All product cards are clickable and redirect a user to the individual product page with detailed information (by clicking on the image or the "View details" button).   
 - Clicking on **Add to cart** button will add the product to the cart with quantity equal to 1, clicking again will simply updates the quantity by 1. This functionality was added to enhance user experiance, to allow users straight away add an item to the cart without viewing products details and giving more flexibility to use the website.
 - If the user is **admin**, there are also 2 buttons displayed in the cards: **Edit** and **Delete**. Clicking Edit button redirects admin to the Edit Product page. Delete button toggles the Delete modal. It asks a superuser to confirm if the product is to be deleted. If so, upon clicking "Delete" button, the product will not be removed from the database, but will set as **discontinued** and will be removed from the user's view. Then the page reloads and the toast-message will inform about the sucessfull deletion. There is also a button "Cancel" that closes the modal when it's clicked. These actions can be done only by superuser, attempts to access them by other users will end up with redirection to the landing page with toast error messages displayed.
 - User can filter the products by **category** to see the specific items. When the category is clicked, only products of the selected category are displayed, as well as the  Category Name and a number of the items satisfying the query.
 
 #### Product details page
- - <img src="https://i.ibb.co/P1Fd8VB/product-details-mockup.png" alt="product_details_mockup" target="_blank" rel="noopener" width="850">
 - The product details page displays information about the selected product: category, name, description, rating, price and product image (or placeholder if no image was added). Clicking the image will open it in the new tab, if the image_url is assigned.
-- If a product is one of the tea categories, not teaware (that checked by using "has_weight" Boolean field), there's additional paragraph informing that price is displayed per 100g.
 - The item quantity can be assigned filling the quantity form, the validation is in place restricting the quantity to the range of 1-999. The validation errors will be displayed, if the user tries to input the numbers outside of that range.
 - Product can be added to the cart by clicking **Add to cart** button, that will be reflected in the cart icon in the navbar (grand total will be increased there). As well as that, the **toast success message** will be displayed when the product is added to the cart.
 - If the user is **admin**, there are also 2 buttons displayed below the product name: **Edit** and **Delete**. Clicking Edit button redirects admin to the Edit Product page. Delete button toggles the Delete modal. It asks a superuser to confirm if the product is to be deleted. If so, upon clicking "Delete" button, the product will not be removed from the database, but will set as **discontinued** and will be removed from the user's view. Then the page reloads and the toast-message will inform about the sucessfull deletion. There is also a button "Cancel" that closes the modal when it's clicked. These actions can be done only by a superuser, attempts to access them by other users will end up with redirection to the landing page with toast error messages displayed.
-- **Breadcrumbs** on the top of the page give a user an additional opportunity to navigate through the product-related pages (e.g. to come back to the category selected).
 - **Products** button redirects user back to the All Products page.
 
 #### Cart page
- - <img src="https://i.ibb.co/VgrcD5d/cart-mockup.png" alt="cart" target="_blank" rel="noopener" width="850">    
 - The link at the top of the page **Continue shopping"** navigates  a user back to the products page, if a user wants to add something else to the cart.
 - Cart page is available for both logged in and non-logged in users, so that it is possible to make purchase being a guest.
 - The page contains a summary of the user's order: the item's **name**, **image**, **price**, **sub-total** and **sku**.
@@ -180,8 +159,7 @@ It contains 1 sections: **Who we are**
 - There is a **Checkout button** that takes a user to the checkout page to proceed with the payment.
 
 #### Checkout page
- - <img src="https://i.ibb.co/t4dyLgg/checkout-mockup.png" alt="checkout" target="_blank" rel="noopener" width="850">    
-Checkout page contains 2 main section: checkout 3-steps form and order summary.
+Checkout page contains checkout 3-steps form and order summary.
 - **Order summary** includes short information about items in the order (image, name, quantity, subtotal, date-time), the link to **Edit cart** ( that redirects a user to the Cart page), delivery cost and also **Total to pay**.
 - **Checkout form** is represented as 3 tabs with the **Next** and **Go back** buttons to navigate between the tabs. The form sections are the following: **Personal Details**, **Billing/Shipping info** and **Payment**.
 - If a user already has a profile with the shipping information saved, the form will be pre-populated with this information.
@@ -313,6 +291,7 @@ Product | product | ForeignKey 'Product' | null=False, blank=False, on_delete=mo
 Quantity | quantity | IntegerField | null=False, blank=False, default=0
 Item Total | item_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
 
+Note: I wont include the "blog app" here as it is not functioning at the moment.
 
 <div align="right">
     <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -339,7 +318,6 @@ Item Total | item_total | DecimalField | max_digits=6, decimal_places=2, null=Fa
 - [Psycopg2](https://pypi.org/project/psycopg2/) - to enable the PostgreSQL database to function with Django.
 - [Stripe](https://stripe.com/ie) - to handle financial transactions.
 - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - to style Django forms.
-- [Coverage](https://coverage.readthedocs.io/en/coverage-5.1/) - to see the percentage of the automated testsing.
 
 ### Tools
 - [GitPod](https://www.gitpod.io/) - an online IDE for developing this project.
@@ -463,9 +441,7 @@ You can temporary comment out the current database settings code and just paste 
 Important Note: that's just temporary set up, this URL **should not be committed and published to GitHub** for security reasons, so make sure not to commit your changes to Git while the URL is in the settings.py.     
 9. Migrate the database models to the Postgres database using the following commands in the terminal:    
 `python3 manage.py makemigrations`     
-`python3 manage.py migrate`     
-10. Load the data fixtures(**categories**, **products**, **itinerary**, **itinerary_items**, **events**) into the  Postgres database using the following command:     
-`python3 manage.py loaddata <fixture_name>`      
+`python3 manage.py migrate`
 11. Create a **superuser** for the Postgres database by running the following command(*you need to follow the instructions and inserting username,email and password*):      
 `python3 manage.py createsuperuser`     
 12. You need to remove your Postgres URL database from the settings and uncomment the default DATABASE settings code in the settings.py file.    
@@ -505,6 +481,11 @@ In order to send real emails from the application, you need to connect it to you
 - The images are bought images since earlier from [Unsplash](https://unsplash.com).
 
 ### Acknowledgements
+
+- I have had a really ruff time finding the time to give to this project that I wanted to. I changed the idea half-way through as I realised I didn't have the knowledge yet for completing it.
+- As it has been over holidays the schools support has been closed for some time, especially when I needed it the most.
+- I didn't make it to scheduele the last call with my mentor Rohit.
+- I have been highly inspired by the MS4 project of fellow student [Irinatu17](https://github.com/irinatu17/Art-of-Tea). A fantastic project in my opinion and it has been a guiding star for me. I am not sure if I have taken code from that project without giving acknowledgements, if that is the case I want to do that here.
 
 <div align="right">
     <b><a href="#table-of-contents">↥ Back To Top</a></b>

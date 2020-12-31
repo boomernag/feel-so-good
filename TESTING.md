@@ -78,10 +78,11 @@ Manual testing was conducted with each feature and each user story on different 
     - check all the image-carousels and reviews-carousel by clicking on chevrons
     - verify that the expected text, icons and  images are displayed 
  - **Results**:
-    - all the buttons redirect to the corresponding pages (About, Blog, Products)
+    - all the buttons redirect to the corresponding pages (About, Blog, Products) (see **bugs** paragraph below)
     - the hover effect on buttons works as expected (expanding, changing background colour)
     - image and review carousels display correctly when chevrons are clicked
     - all the text sections, icons and all the images display correctly, changing the position, size when viewed on different screens
+- **Bugs found and fixed**: The bug with the blog is found in the [Bugs](#blog-not-working) section.
 - **Verdict**: Test passed. All the functionality works as expected, no bugs were found during the testing.
 
 ### About page
@@ -164,7 +165,7 @@ Manual testing was conducted with each feature and each user story on different 
     - if the incorrect or incomplete card details were entered, the error messages are displayed as expected under the Payment field.
     - after the valid form was submitted, the confirmation email was recieved in the email provided with all the correct order info. As well as that, the checkout page renders showing the order summary.
     - when the order was completed by the logged in user in the checkout success page, the "View full order history" button redirects to the Order history page. "Keep shopping" button is displayed for both non-logged in and logged in users and redirects to the products page
- - **Verdict**: The bugs were fixed, all the functionality works as expected. Test passed. 
+ - **Verdict**: Test passed. 
 
 ### Authentication pages
 These features are built-in components of Django allauth package were tested manually as well, as about 5-10 different accounts were created.     
@@ -236,24 +237,7 @@ Forgot/reset password, verification email, login, create account - all work as e
  <div align="right">
     <b><a href="#testing">↥ Back To Top</a></b>
 </div>
- 
-## Automated Testing
-Automated testing is implemented to support manual testing during the development process. The intent was not to achieve 100% coverage with automated testing, but more to support and complement the manual testing, paying more attention to the more fragile code pieces and testing them.       
-Unit tests can be found in the `test_models.py`, `test_views.py`, `test_forms.py` files of applicable applications within the repository.     
-*Note:* The tests should be added in local database, as The Heroku hobby-tier does not give permissions to allow creation of databases that are required for python automated testing. To run the test and check the output, the database (Postgres) code configuration in `settings.py` should be temporarily removed or commented out.     
-- **Command used to run the tests**:    
-`python3 manage.py test`   
-- To run the tests within a specific app only:
-`python manage.py test <app name here>`           
-[Coverage](https://coverage.readthedocs.io/en/coverage-5.1/) was used to get the feedback during the testing and see the percentage of the unit tests implemented. 
-- to generate a coverage report run the following command: `coverage report`
-- to generate the HTML file run the following command:  `coverage html` and open index.html file in the newly created directory, run the file in the browser to see the output. 
-### Travis
-[Travis](https://travis-ci.org/) was also used throughout the unit testing of this project to provide continuous integration with the deployed site when pushing code to GitHub. It is configured via the `.travis.yml` file. All information about how to set it up can be found in [Travis Documentation](https://docs.travis-ci.com/).
 
- <div align="right">
-    <b><a href="#testing">↥ Back To Top</a></b>
-</div>
 
 ## Validators
 ### HTML
@@ -270,12 +254,10 @@ All the Python files were tested through [PEP8 Online](http://pep8online.com/) v
 </div>
 
 ## Compatibility and Responsiveness
-This website had been being tested during the development across **multiple browsers** (Chrome, Edge, Safary, Opera, FireFox, Internet Explorer) and on **multiple devices**: mobile (iPhone 5, 6, 8, Samsung Galaxy S10, Sony Xperia), tablets (iPad, iPadPro) and laptops (with HiDPI, MDPI and touch screens).              
+This website is tested on **Chrome** and on **MacBook Pro 13'**           
 Also, the following tools were used to constantly test the project:
 - **Google Chrome's developer tools** to see how it looks across all the different device screen sizes to ensure compatibility and responsiveness.       
 -  [Am I Responsive](http://ami.responsivedesign.is/) and [Responsinator](http://www.responsinator.com/) online tools for checking responsiveness on different devices (used the local GitPod link as the Heroku has security restrictions).
-Plenty of changes were made and necessary media queries added to make the website fully responsive.        
-The website renders poorly on Internet Explorer browser (as it is outdated). However, the website renders well as expected on all the other browsers.
 
 <div align="right">
     <b><a href="#testing">↥ Back To Top</a></b>
@@ -289,12 +271,17 @@ The website renders poorly on Internet Explorer browser (as it is outdated). How
 </div>
 
 ## Bugs 
-### Exammple
+### Blog not working
+- The time is running up and I don't have anymore time to try to fix this. The blog homepage is working in gitpod but not on deployed site.
+- Admin cannot add blog post but is redirected to 500 page.
+
+### Type number over 99 in quantity box
+- User can type a value higher than 99 then click update.
+### Example
 #### Bug
 
-#### Fix
-
 #### Verdict
+- Time is running out so these bugs will be fixed after submission.
 
  <div align="right">
     <b><a href="#testing">↥ Back To Top</a></b>
