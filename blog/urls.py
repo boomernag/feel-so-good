@@ -1,9 +1,6 @@
-from django.contrib import admin
 from django.urls import path
-from .views import *
-
+from . import views
 
 urlpatterns = [
-    path('blog/', BlogListView, name='blog'),
-    path('blog/<int:_id>', BlogDetailView, name='blog'),
+    path('', views.blog, name='blog'),
 ]
