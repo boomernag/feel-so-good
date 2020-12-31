@@ -500,6 +500,7 @@ In order to send real emails from the application, you need to connect it to you
 ### Code
 - The main code for the project is retraced through [Code Institute](https://codeinstitute.net/) video lessons on the last project in the course -Boutique Ado Django Mini-Project. It is customized to some parts, modified and enhanced to fit the project purposes.
 - [Stack Overflow](https://stackoverflow.com/) was helpful in countless number of times for giving answers to questions of how to proceed.
+- For the blog the code was taken from [DjangoCentral] (https://djangocentral.com/building-a-blog-application-with-django/)
 ### Content and Media
 - The images are bought images since earlier from [Unsplash](https://unsplash.com).
 
