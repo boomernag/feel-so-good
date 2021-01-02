@@ -27,7 +27,7 @@ Manual testing was conducted with each feature and each user story on different 
     - check each page of the website from multiple devices and multiple browsers
     - open the website in the Google Dev Tools and click on "Responsive" to check all pages for all resolutions from 320px and above
     - more detailed information about responsiveness testing can be found in [Compatibility and Responsiveness](#compatibility-and-responsiveness) section
-- **Results**:
+- **Results**: Test passed. All the functionality works as expected, but a bugs that footer doesn't stay glued to bottom was found during the testing.
 - **Verdict**:
 
 ### Navbar
@@ -42,7 +42,7 @@ Manual testing was conducted with each feature and each user story on different 
     - on the smaller devices the search button collapses the search input box and redirects to the products page
     - test the navbar being non-logged in, logged in and as an admin user and to see if the user's status is reflected in the navbar links (login|register - for guests users, my profile, order history, logout - for all logged in users, for admin additional link - product management)
     - check when an item is added to the cart, a cart icon's colour changes to yellow and a badge with cart total appears, the total updates each time new item is added or deleted from the cart
-- **Results and Verdict**:
+- **Results and Verdict**: Test passed. All the functionality works as expected, no bugs were found during the testing.
 
 ### Footer
 - **User stories being tested**:     
@@ -54,7 +54,7 @@ Manual testing was conducted with each feature and each user story on different 
     - check different devices to test if the footer id is displayed correctly (with additional top section on large resolutions)
     - on large resolution, click on all the links in the footer (Quick links section, logo), to check if they work properly pointing to the correct destination
     - hover over the links and social media icons to test if the hover effect is working properly
-- **Results and Verdict**: 
+- **Results and Verdict**: Test passed. All the functionality works as expected, no bugs were found during the testing.
 
 ### Search bar
 - **User story being tested**:     
@@ -67,8 +67,7 @@ Manual testing was conducted with each feature and each user story on different 
     - when an empty form is submitted without any queries, the error message appears informing that no search word was entered
     - if the search query exists in the database, the products page renders, displaying the search word, number of the results found and all products that satisfy the query
     - if the search query does not exist in the database, the products page renders, displaying the search word, number of results equal to 0 and a paragraph telling that no results were found for the entered query
- - **Bugs found and fixed**: 
- - **Verdict**: 
+ - **Verdict**: Test passed. All the functionality works as expected, no bugs were found during the testing.
  
 ### Landing page 
 - **User story being tested**:     
@@ -87,11 +86,11 @@ Manual testing was conducted with each feature and each user story on different 
 
 ### About page
 - **User story being tested**:     
-*As a user, I want to find an information about the company*
+*As a user, I want to find information about the company*
 - **Test**:
     - verify that the expected text is displayed correctly
 - **Results**:
-    - all the text sections are displayed correctly on different screens
+    - the text section is displayed correctly on different screens
 - **Verdict**: Test passed. All the functionality works as expected, no bugs were found during the testing.
 
 ### Products and product details pages

@@ -329,7 +329,6 @@ Note: I wont include the "blog app" here as it is not functioning at the moment.
 - [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) for compatibility with AWS.
 - [Travis](https://travis-ci.org/) - for integration testing.
 - [Balsamiq](https://balsamiq.com/) - to create wireframes.
-- [ImgBB](https://imgbb.com/) - to host images used in README.
 - [Coolors.co](https://coolors.co/) - to create colour palette used in the README.
 
 ### Databases
@@ -394,9 +393,7 @@ Read more about how to set up the Stripe keys in the [Stripe Documentation](http
 `pip3 install -r requirements.txt`
 4. In the terminal in your IDE migrate the models to crete a database using the following commands:    
 `python3 manage.py makemigrations`
-`python3 manage.py migrate`
-5. Load the data fixtures(**categories**, **products**) in that order into the database using the following command:    
-`python3 manage.py loaddata <fixture_name>`        
+`python3 manage.py migrate`    
 6. Create a superuser to have an access to the the admin panel(you need to follow the instructions then and insert username,email and password):    
 `python3 manage.py createsuperuser`
 7. You will now be able to run the application using the following command:     
